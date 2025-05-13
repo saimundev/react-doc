@@ -19,6 +19,7 @@ COPY . .
 # Expose Vite dev server port
 EXPOSE 5173
 
+ENV CHOKIDAR_USEPOLLING=true
 
 # Use pnpm to start dev
 CMD ["pnpm", "dev"]
