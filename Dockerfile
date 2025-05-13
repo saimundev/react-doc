@@ -19,5 +19,6 @@ COPY . .
 # Expose Vite dev server port
 EXPOSE 5173
 
+
 # Use pnpm to start dev
 CMD ["pnpm", "dev"]
