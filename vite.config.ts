@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true, // Required for Docker to allow external access
+    host: '0.0.0.0', // Required for Docker to allow external access
     port: 5173, // Default Vite dev server port
   },
 });
